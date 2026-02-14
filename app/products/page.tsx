@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -25,8 +26,24 @@ const categoryLabels: Record<string, string> = {
 
 const categories = ["All", "Awnings", "Gazebos", "Pergolas", "Elite Retractable Series"];
 
-export default function ProductsPage() {
+export function ProductsContent() {
+  const searchParams = useSearchParams();
   const [category, setCategory] = useState("All");
+
+  useEffect(() => {
+    const cat = searchParams.get("category");
+    if (cat && categories.includes(cat)) {
+      setCategory(cat);
+      // If we have a category in URL, scroll to filters after a short delay
+      // to allow the page to settle and images to begin loading
+      setTimeout(() => {
+        const element = document.getElementById("filter-section");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100);
+    }
+  }, [searchParams]);
 
   const products = useMemo(() => {
     if (category === "All") return productsData as Product[];
@@ -59,7 +76,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-7xl px-4 pb-32 pt-24 sm:px-6 lg:px-8">
+      <div id="filter-section" className="mx-auto max-w-7xl px-4 pb-32 pt-24 sm:px-6 lg:px-8">
         {/* Filters & Navigation */}
         <div className="mb-20">
           <div className="flex flex-wrap justify-between items-end gap-8 pb-8 border-b border-stone-100">
@@ -145,5 +162,13 @@ export default function ProductsPage() {
         </motion.div>
       </div>
     </div>
+  );
+}
+
+export default function ProductsPage() {
+  return (
+    <Suspense>
+      <ProductsContent />
+    </Suspense>
   );
 }

@@ -4,10 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { NAV_LINKS, HEADER_NAV_LINKS } from "@/lib/constants";
+import { NAV_LINKS, HEADER_NAV_LINKS, PRODUCT_CATEGORIES } from "@/lib/constants";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileCollectionsOpen, setMobileCollectionsOpen] = useState(false);
+  const [isCollectionsHovered, setIsCollectionsHovered] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
@@ -40,23 +42,58 @@ export function Header() {
         <nav className="hidden md:flex md:items-center md:gap-10">
           {HEADER_NAV_LINKS.map((link) => {
             const isActive = pathname === link.href || pathname.startsWith(link.href.split("?")[0]);
+            const hasDropdown = link.href === "/products";
+
             return (
-              <Link
+              <div
                 key={link.href}
-                href={link.href}
-                className={`group relative text-[10px] font-black uppercase tracking-[0.3em] transition-all duration-300 ${isActive
-                  ? "text-accent"
-                  : scrolled ? "text-sage-500 hover:text-charcoal" : "text-white/70 hover:text-white"
-                  }`}
+                className="group/nav relative h-full flex items-center"
+                onMouseEnter={() => hasDropdown && setIsCollectionsHovered(true)}
+                onMouseLeave={() => hasDropdown && setIsCollectionsHovered(false)}
               >
-                {link.label}
-                <motion.span
-                  className="absolute -bottom-2 left-0 h-[2px] bg-accent"
-                  initial={false}
-                  animate={{ width: isActive ? "100%" : "0%" }}
-                  transition={{ duration: 0.3 }}
-                />
-              </Link>
+                <Link
+                  href={link.href}
+                  className={`group relative text-[10px] font-black uppercase tracking-[0.3em] transition-all duration-300 ${isActive
+                    ? "text-accent"
+                    : scrolled ? "text-sage-500 hover:text-charcoal" : "text-white/70 hover:text-white"
+                    }`}
+                >
+                  {link.label}
+                  <motion.span
+                    className="absolute -bottom-2 left-0 h-[2px] bg-accent"
+                    initial={false}
+                    animate={{ width: isActive ? "100%" : "0%" }}
+                    transition={{ duration: 0.5 }}
+                  />
+                </Link>
+
+                {hasDropdown && (
+                  <AnimatePresence>
+                    {isCollectionsHovered && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 10, visibility: "hidden" }}
+                        animate={{ opacity: 1, y: 0, visibility: "visible" }}
+                        exit={{ opacity: 0, y: 10, transition: { delay: 0 } }}
+                        transition={{ duration: 0.3, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                        className="absolute top-full left-1/2 -translate-x-1/2 pt-4"
+                      >
+                        <div className="w-56 overflow-hidden rounded-2xl bg-white border border-stone-100 shadow-2xl backdrop-blur-xl p-2">
+                          {PRODUCT_CATEGORIES.map((cat) => (
+                            <Link
+                              key={cat.slug}
+                              href={`/products?category=${cat.slug}#filter-section`}
+                              className="block rounded-xl px-4 py-3 text-[10px] font-black uppercase tracking-[0.2em] text-sage-600 hover:bg-stone-50 hover:text-accent transition-all"
+                              onClick={() => setIsCollectionsHovered(false)}
+                            >
+                              {cat.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                )}
+              </div>
             );
           })}
           <Link
@@ -98,17 +135,64 @@ export function Header() {
             className="overflow-hidden border-t border-sage-200 bg-white md:hidden"
           >
             <nav className="flex flex-col gap-0.5 px-4 py-4">
-              {HEADER_NAV_LINKS.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={`rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${pathname === link.href ? "bg-sage-100 text-accent" : "text-sage-700 hover:bg-sage-100 hover:text-accent"
-                    }`}
-                  onClick={() => setMobileOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {HEADER_NAV_LINKS.map((link) => {
+                const isActive = pathname === link.href;
+                const isCollections = link.href === "/products";
+
+                if (isCollections) {
+                  return (
+                    <div key={link.href} className="flex flex-col">
+                      <button
+                        onClick={() => setMobileCollectionsOpen(!mobileCollectionsOpen)}
+                        className={`flex items-center justify-between rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${isActive || mobileCollectionsOpen ? "bg-sage-100 text-accent" : "text-sage-700 hover:bg-sage-100"}`}
+                      >
+                        {link.label}
+                        <motion.svg
+                          animate={{ rotate: mobileCollectionsOpen ? 180 : 0 }}
+                          className="h-4 w-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </motion.svg>
+                      </button>
+                      <AnimatePresence>
+                        {mobileCollectionsOpen && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            className="overflow-hidden flex flex-col pl-4 gap-1 mt-1"
+                          >
+                            {PRODUCT_CATEGORIES.map((cat) => (
+                              <Link
+                                key={cat.slug}
+                                href={`/products?category=${cat.slug}#filter-section`}
+                                className="px-3 py-2 text-xs font-bold uppercase tracking-widest text-sage-500 hover:text-accent"
+                                onClick={() => setMobileOpen(false)}
+                              >
+                                {cat.label}
+                              </Link>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${pathname === link.href ? "bg-sage-100 text-accent" : "text-sage-700 hover:bg-sage-100 hover:text-accent"}`}
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
               <Link
                 href="/contact"
                 className="mt-2 flex items-center justify-center gap-2 rounded-lg bg-accent px-4 py-3 text-sm font-semibold text-white"

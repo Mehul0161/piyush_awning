@@ -48,3 +48,9 @@ export const HEADER_NAV_LINKS = [
   { href: "/manufacturing", label: "Manufacturing" },
   { href: "/about", label: "Heritage" },
 ] as const;
+export const PRODUCT_CATEGORIES = [
+  { slug: "Awnings", label: "Awnings" },
+  { slug: "Gazebos", label: "Gazebos" },
+  { slug: "Pergolas", label: "Pergolas" },
+  { slug: "Elite Retractable Series", label: "Elite Series" },
+] as const;

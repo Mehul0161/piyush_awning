@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Section } from "@/components/ui/Section";
+import { CustomSelect } from "@/components/ui/CustomSelect";
 import { WHATSAPP_NUMBER, MAP_EMBED_URL, COMPANY_ADDRESS, COMPANY_EMAIL, PHONE_NUMBER } from "@/lib/constants";
 import { submitEnquiry } from "@/lib/integrations";
 
@@ -159,28 +160,18 @@ export default function ContactPage() {
                 </div>
 
                 <div className="grid gap-10 md:grid-cols-2">
-                  <div className="space-y-2">
-                    <label htmlFor="product" className={labelClass}>Shading Category</label>
-                    <div className="relative">
-                      <select
-                        id="product"
-                        value={product}
-                        onChange={(e) => setProduct(e.target.value)}
-                        className={`${inputClass} appearance-none cursor-pointer pr-12`}
-                      >
-                        <option value="">Select Option...</option>
-                        <option value="Retractable Awning">Retractable Awning</option>
-                        <option value="Luxury Gazebo">Luxury Gazebo</option>
-                        <option value="Bioclimatic Pergola">Bioclimatic Pergola</option>
-                        <option value="Tensile Structure">Tensile Structure</option>
-                      </select>
-                      <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-stone-400">
-                        <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
+                  <CustomSelect
+                    label="Shading Category"
+                    value={product}
+                    onChange={setProduct}
+                    placeholder="Select Option..."
+                    options={[
+                      { value: "Retractable Awning", label: "Retractable Awning" },
+                      { value: "Luxury Gazebo", label: "Luxury Gazebo" },
+                      { value: "Bioclimatic Pergola", label: "Bioclimatic Pergola" },
+                      { value: "Tensile Structure", label: "Tensile Structure" },
+                    ]}
+                  />
                   <div className="space-y-2">
                     <label htmlFor="location" className={labelClass}>Project Site</label>
                     <input
