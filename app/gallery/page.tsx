@@ -27,11 +27,11 @@ export default function GalleryPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px] w-full overflow-hidden bg-[#0A0F0B] flex items-center justify-center">
+      <section className="relative h-screen min-h-[700px] w-full overflow-hidden bg-[#0A0F0B] flex items-center justify-center">
         <div className="absolute inset-0 opacity-40 grayscale contrast-125">
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F0B] via-transparent to-transparent z-10" />
           <Image
-            src="/heroBG.jpeg"
+            src="/assets/images/hero/gallery-hero.jpeg"
             alt="Gallery Background"
             fill
             className="object-cover"

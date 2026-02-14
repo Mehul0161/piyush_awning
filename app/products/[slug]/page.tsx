@@ -2,7 +2,6 @@
 
 import { useMemo, useState } from "react";
 import { useParams } from "next/navigation";
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import Image from "next/image";
 import productsData from "@/data/products.json";
@@ -10,11 +9,6 @@ import { getImagePath } from "@/lib/imageUtils";
 import { Section } from "@/components/ui/Section";
 import { motion } from "framer-motion";
 
-const ProductViewerCanvas = dynamic(
-  () =>
-    import("@/components/three/ProductViewerCanvas").then((m) => m.ProductViewerCanvas),
-  { ssr: false, loading: () => <div className="aspect-square w-full rounded-[3rem] bg-stone-100 animate-pulse" /> }
-);
 
 type Product = {
   slug: string;
@@ -81,20 +75,14 @@ export default function ProductDetailPage() {
           {/* Left: Product visual & Options */}
           <div className="space-y-12">
             <div className="relative aspect-[4/3] md:aspect-square overflow-hidden rounded-[3rem] bg-[#F1F3F1] border border-black/5 shadow-2xl">
-              {product.slug === "elite-retractable" ? (
-                <div className="h-full w-full">
-                  <ProductViewerCanvas fabricColor={fabricColor} frameColor={frameOptions.find(f => f.name === frameOption)?.color ?? "#1a1a1a"} />
-                </div>
-              ) : (
-                <Image
-                  src={getImagePath(product.thumbnail)}
-                  alt={product.name}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  unoptimized={product.thumbnail?.includes("unsplash")}
-                />
-              )}
+              <Image
+                src={getImagePath(product.thumbnail)}
+                alt={product.name}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                unoptimized={product.thumbnail?.includes("unsplash")}
+              />
 
               {/* Float buttons to match reference */}
               <div className="absolute bottom-8 left-8 flex gap-3">

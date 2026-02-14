@@ -1,0 +1,79 @@
+# COMPLETE IMAGE CHECKLIST FOR PIYUSH AWNING WEBSITE
+All images should be placed in: C:\Users\mehul\OneDrive\Desktop\piyAwn\public\assets\images\
+
+## ✅ CURRENTLY UPLOADED (6 images)
+1. ✓ images/hero/heroBG.jpeg
+2. ✓ images/products/awning-retractable.jpeg
+3. ✓ images/products/classic-gazebo.jpeg
+4. ✓ images/products/elite-awning.jpeg
+5. ✓ images/products/fixed-awning.jpeg
+6. ✓ images/products/pergola-bioclimatic.jpeg
+
+## ❌ STILL NEEDED (32 images)
+
+### HERO BACKGROUNDS (11 images needed)
+Location: public/assets/images/hero/
+- [ ] about-hero.jpeg - About page background
+- [ ] contact-hero.jpeg - Contact page background
+- [ ] products-hero.jpeg - Products page background
+- [ ] projects-hero.jpeg - Projects page background
+- [ ] gallery-hero.jpeg - Gallery page background
+- [ ] faq-hero.jpeg - FAQ page background
+- [ ] services-hero.jpeg - Services page background
+- [ ] manufacturing-hero.jpeg - Manufacturing page background
+- [ ] manufacturing-precision.jpeg - Manufacturing process image
+- [ ] factory-interior.jpeg - Factory tour image
+- [ ] cta-background.jpeg - Call-to-action backgrounds
+
+### SERVICE IMAGES (4 images needed)
+Location: public/assets/images/hero/
+- [ ] service-consultation.jpeg - Site consultation service
+- [ ] service-engineering.jpeg - Bespoke engineering service
+- [ ] service-installation.jpeg - Installation service
+- [ ] service-support.jpeg - Support service
+
+### PROJECT PORTFOLIO (6 images needed)
+Location: public/assets/images/projects/
+- [ ] vedic-villa.jpeg - Vedic Villa project (Alibaug)
+- [ ] skyline-terrace.jpeg - Skyline Terrace (South Bombay)
+- [ ] zen-garden.jpeg - Zen Garden Retreat (Bangalore)
+- [ ] azure-estate.jpeg - The Azure Estate (Goa)
+- [ ] tech-park.jpeg - Tech Park Pavilion (Hyderabad)
+- [ ] mountain-view.jpeg - Mountain View Manor (Lonavala)
+
+### GALLERY IMAGES (6 images needed)
+Location: public/assets/images/gallery/
+- [ ] fabric-texture-1.jpeg - Fabric texture close-up
+- [ ] gazebo-install.jpeg - Completed gazebo
+- [ ] material-detail.jpeg - Material detail shot
+- [ ] awning-install.jpeg - Completed awning
+- [ ] pergola-install.jpeg - Completed pergola
+- [ ] fabric-detail.jpeg - Fabric detail
+
+### ABOUT PAGE (1 image needed)
+Location: public/assets/images/about/
+- [ ] team-placeholder.jpeg - Team member photos
+
+## FOLDER STRUCTURE TO CREATE:
+```
+public/assets/images/
+├── hero/           (12 images: 1 uploaded, 11 needed)
+├── products/       (5 images: ALL UPLOADED ✓)
+├── projects/       (6 images: 0 uploaded, 6 needed)
+├── gallery/        (6 images: 0 uploaded, 6 needed)
+└── about/          (1 image: 0 uploaded, 1 needed)
+```
+
+## TOTAL COUNT:
+- ✅ Uploaded: 6 images
+- ❌ Still needed: 32 images
+- 📊 Total required: 38 images
+
+## QUICK TIPS:
+1. All images must be in .jpeg format (or update the code if using .jpg/.png)
+2. Filenames are case-sensitive and must match exactly
+3. Recommended image sizes:
+   - Hero images: 1920x1080px minimum
+   - Product images: 800x800px minimum
+   - Project/Gallery: 1200x800px minimum
+4. Optimize images before uploading (use TinyPNG or similar)

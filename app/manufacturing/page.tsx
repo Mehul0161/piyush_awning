@@ -79,12 +79,12 @@ function TimelineStep({
 export default function ManufacturingPage() {
   return (
     <>
-      <section className="relative h-[60vh] min-h-[500px] w-full overflow-hidden bg-[#0A0F0B] flex items-center justify-center">
+      <section className="relative h-screen min-h-[700px] w-full overflow-hidden bg-[#0A0F0B] flex items-center justify-center">
         {/* Cinematic Industrial Background */}
         <div className="absolute inset-0 opacity-40 grayscale contrast-125">
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F0B] via-transparent to-transparent z-10" />
           <Image
-            src="/heroBG.jpeg"
+            src="/assets/images/hero/manufacturing-hero.jpeg"
             alt="Manufacturing Heritage"
             fill
             className="object-cover"
@@ -142,7 +142,7 @@ export default function ManufacturingPage() {
               <div className="flex-1 w-full max-w-xl">
                 <div className="aspect-[16/10] rounded-[2.5rem] bg-[#F1F3F1] border border-black/5 shadow-2xl overflow-hidden relative group">
                   <Image
-                    src="/heroBG.jpeg"
+                    src="/assets/images/hero/manufacturing-precision.jpeg"
                     alt={step.title}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -197,7 +197,7 @@ export default function ManufacturingPage() {
           </div>
           <div className="aspect-[4/3] rounded-[3rem] bg-white shadow-2xl border border-black/5 overflow-hidden relative group">
             <Image
-              src="/heroBG.jpeg"
+              src="/assets/images/hero/factory-interior.jpeg"
               alt="Factory Interior"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"

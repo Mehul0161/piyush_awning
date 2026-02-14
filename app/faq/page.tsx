@@ -32,11 +32,11 @@ export default function FAQPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative h-[50vh] min-h-[400px] w-full overflow-hidden bg-[#0A0F0B] flex items-center justify-center">
+      <section className="relative h-screen min-h-[700px] w-full overflow-hidden bg-[#0A0F0B] flex items-center justify-center">
         <div className="absolute inset-0 opacity-30 grayscale contrast-125">
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F0B] via-transparent to-transparent z-10" />
           <Image
-            src="/heroBG.jpeg"
+            src="/assets/images/hero/faq-hero.jpeg"
             alt="FAQ Background"
             fill
             className="object-cover"

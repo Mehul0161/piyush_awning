@@ -3,7 +3,7 @@
     "slug": "elite-retractable",
     "name": "Elite Series",
     "category": "Elite Retractable Series",
-    "thumbnail": "/heroBG.jpeg",
+    "thumbnail": "/assets/images/products/elite-awning.jpeg",
     "shortDescription": "Precision engineered for luxury outdoor living spaces.",
     "modelPath": null,
     "keySpecs": {
@@ -62,7 +62,7 @@
     "slug": "gazebo-classic",
     "name": "Classic Gazebo",
     "category": "Gazebos",
-    "thumbnail": "/heroBG.jpeg",
+    "thumbnail": "/assets/images/products/classic-gazebo.jpeg",
     "shortDescription": "Elegant freestanding gazebo for gardens and patios.",
     "modelPath": null,
     "specs": {
@@ -86,7 +86,7 @@
     "slug": "awning-retractable",
     "name": "Retractable Awning",
     "category": "Awnings",
-    "thumbnail": "/heroBG.jpeg",
+    "thumbnail": "/assets/images/products/awning-retractable.jpeg",
     "shortDescription": "Motorized or manual retractable awning for balconies.",
     "modelPath": null,
     "specs": {
@@ -109,7 +109,7 @@
     "slug": "pergola-louvre",
     "name": "Pergola Bio-Climatic",
     "category": "Pergolas",
-    "thumbnail": "/heroBG.jpeg",
+    "thumbnail": "/assets/images/products/pergola-bioclimatic.jpeg",
     "shortDescription": "Adjustable aluminum louvers for all-weather use.",
     "modelPath": null,
     "specs": {
@@ -129,7 +129,7 @@
     "slug": "awning-fixed",
     "name": "Fixed Polycarbonate",
     "category": "Awnings",
-    "thumbnail": "/heroBG.jpeg",
+    "thumbnail": "/assets/images/products/awning-fixed.jpeg",
     "shortDescription": "High impact resistance with crystal clear transparency.",
     "modelPath": null,
     "specs": {

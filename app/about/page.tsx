@@ -8,28 +8,35 @@ import { COMPANY_LOCATION } from "@/lib/constants";
 export default function AboutPage() {
   return (
     <div className="bg-white">
-      {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px] w-full overflow-hidden bg-[#0A0F0B] flex items-center justify-center">
-        <div className="absolute inset-0 opacity-30 grayscale contrast-125">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F0B] via-transparent to-transparent z-10" />
+      {/* Hero Section - Full height with navbar overlay */}
+      <section className="relative h-screen min-h-[700px] w-full overflow-hidden bg-[#0A0F0B]">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
           <Image
-            src="/heroBG.jpeg"
+            src="/assets/images/hero/about-hero.jpeg"
             alt="Heritage Background"
             fill
-            className="object-cover"
+            className="object-cover object-center"
             priority
           />
         </div>
 
-        <div className="relative z-20 text-center px-4 max-w-4xl pt-20">
-          <span className="text-xs font-bold uppercase tracking-[0.4em] text-accent mb-4 block">The Heritage</span>
-          <h1 className="font-serif text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight [text-shadow:0_4px_24px_rgba(0,0,0,0.6)]">
-            A Journey of <br />
-            <span className="text-accent italic">Evolution.</span>
-          </h1>
-          <p className="mt-8 text-lg text-white max-w-2xl mx-auto leading-relaxed uppercase tracking-[0.1em] text-[10px] font-black [text-shadow:0_2px_12px_rgba(0,0,0,0.4)]">
-            Since 2011, we have been redefining the boundaries of outdoor living through architectural precision.
-          </p>
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-stone-950/40 z-10" />
+        <div className="absolute inset-y-0 left-0 w-2/3 bg-gradient-to-r from-stone-950/90 via-stone-950/60 to-transparent z-10" />
+
+        {/* Content Container */}
+        <div className="relative z-20 flex min-h-screen flex-col items-center justify-center px-4 pt-20">
+          <div className="mx-auto max-w-7xl w-full text-center">
+            <span className="text-xs font-bold uppercase tracking-[0.4em] text-accent mb-4 block">The Heritage</span>
+            <h1 className="font-serif text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight [text-shadow:0_4px_24px_rgba(0,0,0,0.6)]">
+              A Journey of <br />
+              <span className="text-accent italic">Evolution.</span>
+            </h1>
+            <p className="mt-8 text-lg text-white max-w-2xl mx-auto leading-relaxed uppercase tracking-[0.1em] text-[10px] font-black [text-shadow:0_2px_12px_rgba(0,0,0,0.4)]">
+              Since 2011, we have been redefining the boundaries of outdoor living through architectural precision.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -138,7 +145,7 @@ export default function AboutPage() {
               <div key={i} className="group cursor-pointer">
                 <div className="aspect-[3/4] rounded-[3rem] bg-white/5 border border-white/5 mb-8 overflow-hidden relative">
                   <Image
-                    src="/heroBG.jpeg"
+                    src="/assets/images/about/team-placeholder.jpeg"
                     alt={member.name}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"

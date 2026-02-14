@@ -1,0 +1,146 @@
+# AI IMAGE GENERATION PROMPTS - COMPLETE SET (32 IMAGES)
+Use these prompts in Midjourney, DALL-E 3, Ideogram, or Stable Diffusion.
+Add "--ar 16:9" for Midjourney or adjust aspect ratio as needed.
+
+================================================================================
+HERO BACKGROUNDS (11 IMAGES)
+================================================================================
+
+1. about-hero.jpeg
+"Architectural photography of a luxury Indian villa courtyard with traditional stone archways and modern retractable pergola. Warm golden hour lighting, heritage meets contemporary design. Cinematic, high-end real estate photography style, 8k resolution."
+
+2. contact-hero.jpeg
+"Professional architectural shot of a modern office building entrance with sleek fixed awning. Clean lines, glass facade, urban corporate aesthetic. Bright daylight, sharp focus, architectural digest style."
+
+3. products-hero.jpeg
+"Luxury outdoor living space showcase with multiple premium awnings and pergolas. Modern villa terrace overlooking landscaped garden. Sophisticated, high-end catalog photography, perfect lighting, 8k detail."
+
+4. projects-hero.jpeg
+"Wide cinematic shot of an award-winning architectural outdoor installation. Bioclimatic pergola over infinity pool with mountain backdrop. Dramatic sunset lighting, professional architecture photography."
+
+5. gallery-hero.jpeg
+"Artistic close-up of premium outdoor fabric texture with water droplets. Macro photography showing weave detail and waterproof coating. Studio lighting, product photography style, ultra sharp."
+
+6. faq-hero.jpeg
+"Clean, minimalist shot of a modern retractable awning mechanism. Technical detail photography showing precision engineering. Soft studio lighting, white background, product catalog style."
+
+7. services-hero.jpeg
+"Professional team of installers working on a luxury pergola installation. White-glove service, precision craftsmanship. Documentary style photography, natural lighting, high-end service industry aesthetic."
+
+8. manufacturing-hero.jpeg
+"Modern, pristine manufacturing facility interior. Large rolls of premium Italian fabric, automated cutting machines. Bright industrial lighting, clean organized workspace, high-tech factory aesthetic."
+
+9. manufacturing-precision.jpeg
+"Extreme close-up of robotic arm or precision tool working on extruded aluminum frame. Industrial sparks or polished metal finish. Macro photography, engineering excellence, high-tech manufacturing."
+
+10. factory-interior.jpeg
+"Wide-angle shot of organized manufacturing workshop. Quality control station, fabric testing equipment, skilled craftsmen. Bright, clean industrial space, professional factory photography."
+
+11. cta-background.jpeg
+"Luxurious outdoor terrace at dusk with elegant pergola and warm ambient lighting. Cozy, inviting atmosphere. Lifestyle photography, aspirational living, soft bokeh background, cinematic mood."
+
+================================================================================
+SERVICE IMAGES (4 IMAGES)
+================================================================================
+
+12. service-consultation.jpeg
+"Professional architect or consultant with tablet measuring outdoor space. Modern villa terrace, sunlight analysis. Business professional photography, trust and expertise, natural lighting."
+
+13. service-engineering.jpeg
+"Technical drawing or CAD design on screen showing custom pergola blueprint. Engineering precision, modern office setting. Professional workspace photography, attention to detail."
+
+14. service-installation.jpeg
+"Skilled installation team mounting a large motorized awning on luxury residence. Safety equipment, precision work. Documentary style, professional service photography, action shot."
+
+15. service-support.jpeg
+"Friendly technician performing maintenance on automated pergola system. Customer service excellence, long-term care. Professional service photography, approachable and trustworthy."
+
+================================================================================
+PROJECT PORTFOLIO (6 IMAGES)
+================================================================================
+
+16. vedic-villa.jpeg (Alibaug, Maharashtra)
+"Traditional Indian haveli courtyard with modern retractable pergola seamlessly integrated. Heritage stone architecture meets contemporary climate control. Warm lighting, architectural fusion, luxury residential."
+
+17. skyline-terrace.jpeg (South Bombay)
+"Upscale rooftop lounge with custom tensile structures and premium umbrellas. Mumbai city skyline and Arabian Sea in background at sunset. High-end urban hospitality design, sophisticated atmosphere."
+
+18. zen-garden.jpeg (Bangalore, Karnataka)
+"Minimalist Japanese-inspired garden with invisible glass-integrated awnings. Clean lines, zen aesthetic, lush greenery. Architectural photography, serene and sophisticated, natural light."
+
+19. azure-estate.jpeg (Goa)
+"Luxury boutique resort poolside with multiple elegant gazebos. Tropical palms, crystal clear infinity pool, coastal paradise. Vibrant resort photography, high-end hospitality, turquoise water."
+
+20. tech-park.jpeg (Hyderabad)
+"Large-scale corporate outdoor workspace with automated bioclimatic pergolas. Modern tech campus, employees working outdoors. Professional corporate architecture, innovative workspace design."
+
+21. mountain-view.jpeg (Lonavala)
+"Heavy-duty bioclimatic pergola on hillside villa terrace during monsoon. Rain sensors active, lush green mountains in background. Dramatic weather, engineering excellence, luxury hill station architecture."
+
+================================================================================
+GALLERY SHOWCASE (6 IMAGES)
+================================================================================
+
+22. fabric-texture-1.jpeg
+"Extreme macro photograph of high-end solution-dyed acrylic awning fabric. Water droplets beading on hydrophobic surface. Studio lighting, product photography, ultra-sharp detail, textile weave visible."
+
+23. gazebo-install.jpeg
+"Completed luxury freestanding gazebo in manicured estate garden. Stone pillars, high-tension fabric roof, elegant outdoor furniture. Professional architectural photography, golden hour lighting."
+
+24. material-detail.jpeg
+"Close-up of premium aluminum frame joint showing precision engineering. Powder-coated matte black finish, stainless steel hardware. Product detail photography, industrial design, craftsmanship focus."
+
+25. awning-install.jpeg
+"Finished motorized retractable awning on modern white facade. Clean installation, perfect alignment. Architectural detail photography, professional craftsmanship, bright daylight."
+
+26. pergola-install.jpeg
+"Completed bioclimatic pergola with adjustable louvers over wooden deck. Louvers half-open showing blue sky. Professional installation photography, modern outdoor living, architectural precision."
+
+27. fabric-detail.jpeg
+"Artistic close-up of awning fabric edge with reinforced stitching and UV-resistant thread. Macro photography showing quality craftsmanship. Studio lighting, premium textile detail."
+
+================================================================================
+ABOUT PAGE (1 IMAGE)
+================================================================================
+
+28. team-placeholder.jpeg
+"Professional corporate headshot of confident Indian business professional in modern office. Neutral background, professional attire, approachable expression. Corporate photography, LinkedIn style, professional lighting."
+
+Note: For team photos, you can use this same prompt 4 times or create variations:
+- "...male professional in his 40s..."
+- "...female professional in her 30s..."
+- "...senior professional with gray hair..."
+- "...young professional in their 20s..."
+
+================================================================================
+TIPS FOR BEST RESULTS:
+================================================================================
+
+1. MIDJOURNEY USERS: Add these parameters
+   - "--ar 16:9" for hero images
+   - "--ar 4:3" for products/projects
+   - "--ar 1:1" for square images
+   - "--style raw" for photorealistic results
+   - "--v 6" for latest version
+
+2. DALL-E 3 USERS:
+   - Use "photorealistic" and "8k resolution" in prompts
+   - Specify "architectural photography" for professional look
+   - Request "natural lighting" for outdoor scenes
+
+3. IDEOGRAM USERS:
+   - Select "Photo" mode
+   - Use "Magic Prompt" for enhancement
+   - Choose 16:9 aspect ratio for heroes
+
+4. GENERAL TIPS:
+   - Generate multiple variations and pick the best
+   - Avoid text/logos in images (AI struggles with text)
+   - For consistency, use similar lighting descriptions
+   - Download in highest resolution available
+   - Optimize images before uploading (TinyPNG, Squoosh)
+
+5. INDIAN CONTEXT:
+   - Mention "Indian architecture" or "India" for authentic look
+   - Reference specific cities for local flavor
+   - Include tropical/monsoon elements where relevant

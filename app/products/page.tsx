@@ -36,11 +36,11 @@ export default function ProductsPage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px] w-full overflow-hidden bg-[#0A0F0B] flex items-center justify-center">
+      <section className="relative h-screen min-h-[700px] w-full overflow-hidden bg-[#0A0F0B] flex items-center justify-center">
         <div className="absolute inset-0 opacity-40 grayscale contrast-125">
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F0B] via-transparent to-transparent z-10" />
           <Image
-            src="/heroBG.jpeg"
+            src="/assets/images/hero/products-hero.jpeg"
             alt="Products Background"
             fill
             className="object-cover"
@@ -127,7 +127,7 @@ export default function ProductsPage() {
           className="mt-32 rounded-[3.5rem] bg-stone-950 p-12 md:p-24 text-center relative overflow-hidden group"
         >
           <div className="absolute inset-0 opacity-20 grayscale scale-110 group-hover:scale-100 transition-transform duration-1000">
-            <Image fill src="/heroBG.jpeg" alt="CTA BG" className="object-cover" />
+            <Image fill src="/assets/images/hero/cta-background.jpeg" alt="CTA BG" className="object-cover" />
           </div>
           <div className="relative z-10 border border-white/5 p-12 md:p-20 rounded-[3rem] backdrop-blur-sm bg-white/5">
             <span className="text-[10px] font-black uppercase tracking-[0.5em] text-accent mb-6 block">Ready for your sanctuary?</span>

@@ -24,14 +24,14 @@ export function Header() {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
       ? "bg-white/90 backdrop-blur-md py-4 shadow-lg border-b border-sage-200/50"
-      : isHome ? "bg-transparent py-6 border-b border-transparent" : "bg-white py-4 border-b border-sage-200"
+      : "bg-transparent py-6 border-b border-transparent"
       }`}>
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link
           href="/"
           className="flex items-center gap-3 transition-opacity hover:opacity-90"
         >
-          <span className={`font-serif text-2xl tracking-tight font-bold lg:text-3xl transition-colors ${(isHome && !scrolled) ? "text-white" : "text-charcoal"
+          <span className={`font-serif text-2xl tracking-tight font-bold lg:text-3xl transition-colors ${scrolled ? "text-charcoal" : "text-white"
             }`}>
             PIYUSH<span className="text-accent italic ml-1">AWNING</span>
           </span>
@@ -46,7 +46,7 @@ export function Header() {
                 href={link.href}
                 className={`group relative text-[10px] font-black uppercase tracking-[0.3em] transition-all duration-300 ${isActive
                   ? "text-accent"
-                  : (isHome && !scrolled) ? "text-white/70 hover:text-white" : "text-sage-500 hover:text-charcoal"
+                  : scrolled ? "text-sage-500 hover:text-charcoal" : "text-white/70 hover:text-white"
                   }`}
               >
                 {link.label}
@@ -61,9 +61,9 @@ export function Header() {
           })}
           <Link
             href="/contact"
-            className={`flex items-center justify-center rounded-full px-8 py-3 text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-500 hover:scale-105 active:scale-95 ${(isHome && !scrolled)
-                ? "bg-white text-charcoal shadow-xl shadow-white/10"
-                : "bg-accent text-white shadow-lg shadow-accent/20 hover:bg-accent-hover"
+            className={`flex items-center justify-center rounded-full px-8 py-3 text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-500 hover:scale-105 active:scale-95 ${scrolled
+              ? "bg-accent text-white shadow-lg shadow-accent/20 hover:bg-accent-hover"
+              : "bg-white text-charcoal shadow-xl shadow-white/10"
               }`}
           >
             Request Quote
@@ -78,13 +78,13 @@ export function Header() {
           aria-expanded={mobileOpen}
         >
           <span
-            className={`block h-0.5 w-6 rounded bg-sage-700 transition-all duration-200 ${mobileOpen ? "translate-y-2 rotate-45" : ""}`}
+            className={`block h-0.5 w-6 rounded transition-all duration-200 ${mobileOpen ? "translate-y-2 rotate-45" : ""} ${scrolled ? "bg-sage-700" : "bg-white"}`}
           />
           <span
-            className={`block h-0.5 w-6 rounded bg-sage-700 transition-opacity duration-200 ${mobileOpen ? "opacity-0" : ""}`}
+            className={`block h-0.5 w-6 rounded transition-opacity duration-200 ${mobileOpen ? "opacity-0" : ""} ${scrolled ? "bg-sage-700" : "bg-white"}`}
           />
           <span
-            className={`block h-0.5 w-6 rounded bg-sage-700 transition-all duration-200 ${mobileOpen ? "-translate-y-2 -rotate-45" : ""}`}
+            className={`block h-0.5 w-6 rounded transition-all duration-200 ${mobileOpen ? "-translate-y-2 -rotate-45" : ""} ${scrolled ? "bg-sage-700" : "bg-white"}`}
           />
         </button>
       </div>

@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "src": "/heroBG.jpeg",
+    "src": "/assets/images/gallery/fabric-texture-1.jpeg",
     "tags": [
       "Texture",
       "Fabric"
@@ -9,7 +9,7 @@
   },
   {
     "id": "2",
-    "src": "/heroBG.jpeg",
+    "src": "/assets/images/gallery/gazebo-install.jpeg",
     "tags": [
       "Gazebos",
       "Completed"
@@ -17,7 +17,7 @@
   },
   {
     "id": "3",
-    "src": "/heroBG.jpeg",
+    "src": "/assets/images/gallery/material-detail.jpeg",
     "tags": [
       "Texture",
       "Materials"
@@ -25,7 +25,7 @@
   },
   {
     "id": "4",
-    "src": "/heroBG.jpeg",
+    "src": "/assets/images/gallery/awning-install.jpeg",
     "tags": [
       "Awnings",
       "Completed"
@@ -33,7 +33,7 @@
   },
   {
     "id": "5",
-    "src": "/heroBG.jpeg",
+    "src": "/assets/images/gallery/pergola-install.jpeg",
     "tags": [
       "Pergolas",
       "Completed"
@@ -41,7 +41,7 @@
   },
   {
     "id": "6",
-    "src": "/heroBG.jpeg",
+    "src": "/assets/images/gallery/fabric-detail.jpeg",
     "tags": [
       "Details",
       "Fabric"

@@ -9,7 +9,7 @@ const services = [
     description:
       "We provide expert site evaluations to measure dimensions, analyze sunlight patterns, and recommend the optimal shading architecture for your specific environment.",
     cta: "Schedule Consultation",
-    image: "/heroBG.jpeg"
+    image: "/assets/images/hero/service-consultation.jpeg"
   },
   {
     id: "custom",
@@ -17,7 +17,7 @@ const services = [
     description:
       "Every piece is engineered to order in our local facility. We tailor frame structures, fabric tensions, and automation systems to your precise aesthetic vision.",
     cta: "Start Your Design",
-    image: "/heroBG.jpeg"
+    image: "/assets/images/hero/service-engineering.jpeg"
   },
   {
     id: "installation",
@@ -25,7 +25,7 @@ const services = [
     description:
       "Our specialized White-Glove team handles the entire installation process, ensuring structural integrity and flawless aesthetic integration with your property.",
     cta: "See Our Process",
-    image: "/heroBG.jpeg"
+    image: "/assets/images/hero/service-installation.jpeg"
   },
   {
     id: "support",
@@ -33,7 +33,7 @@ const services = [
     description:
       "Our relationship continues long after installation. We offer comprehensive maintenance programs and technical audits to preserve your system's longevity.",
     cta: "Contact Support",
-    image: "/heroBG.jpeg"
+    image: "/assets/images/hero/service-support.jpeg"
   },
 ];
 
@@ -42,11 +42,11 @@ export default function ServicesPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px] w-full overflow-hidden bg-[#0A0F0B] flex items-center justify-center">
+      <section className="relative h-screen min-h-[700px] w-full overflow-hidden bg-[#0A0F0B] flex items-center justify-center">
         <div className="absolute inset-0 opacity-40 grayscale contrast-125">
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F0B] via-transparent to-transparent z-10" />
           <Image
-            src="/heroBG.jpeg"
+            src="/assets/images/hero/services-hero.jpeg"
             alt="Services Background"
             fill
             className="object-cover"

@@ -10,7 +10,7 @@ export function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/heroBG.jpeg"
+          src="/assets/images/hero/heroBG.jpeg"
           alt="Luxury Architectural Shading"
           fill
           priority

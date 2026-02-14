@@ -29,27 +29,40 @@ export default function ProjectsPage() {
 
   return (
     <div className="bg-white">
-      {/* Hero Section */}
-      <section className="relative h-[70vh] min-h-[600px] w-full overflow-hidden bg-[#0A0F0B] flex items-center justify-center">
-        <div className="absolute inset-0 opacity-40 grayscale contrast-125">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F0B] via-transparent to-transparent z-10" />
+      {/* Hero Section - Full height with navbar overlay */}
+      <section className="relative h-screen min-h-[700px] w-full overflow-hidden bg-[#0A0F0B]">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
           <Image
-            src="/heroBG.jpeg"
+            src="/assets/images/hero/projects-hero.jpeg"
             alt="Architecture Background"
             fill
-            className="object-cover"
+            className="object-cover object-center"
             priority
           />
         </div>
 
-        <div className="relative z-20 text-center px-4 max-w-5xl pt-20">
-          <span className="text-xs font-bold uppercase tracking-[0.4em] text-accent mb-4 block">The Portfolio</span>
-          <h1 className="font-serif text-6xl md:text-8xl font-bold text-white tracking-tight leading-tight [text-shadow:0_4px_24px_rgba(0,0,0,0.6)]">
-            Our <span className="text-accent italic">Masterpieces.</span>
-          </h1>
-          <p className="mt-8 text-lg text-white max-w-2xl mx-auto leading-relaxed uppercase tracking-[0.1em] text-[10px] font-black [text-shadow:0_2px_12px_rgba(0,0,0,0.4)]">
-            A curated showcase of architectural shading installations across India's most prestigious estates.
-          </p>
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-stone-950/40 z-10" />
+        <div className="absolute inset-y-0 left-0 w-2/3 bg-gradient-to-r from-stone-950/90 via-stone-950/60 to-transparent z-10" />
+
+        {/* Content Container */}
+        <div className="relative z-20 flex min-h-screen flex-col items-center justify-center px-4 pt-20">
+          <div className="mx-auto max-w-7xl w-full text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <span className="text-xs font-bold uppercase tracking-[0.4em] text-accent mb-4 block">The Portfolio</span>
+              <h1 className="font-serif text-6xl md:text-8xl font-bold text-white tracking-tight leading-tight [text-shadow:0_4px_24px_rgba(0,0,0,0.6)]">
+                Our <span className="text-accent italic">Masterpieces.</span>
+              </h1>
+              <p className="mt-8 text-lg text-white max-w-2xl mx-auto leading-relaxed uppercase tracking-[0.1em] text-[10px] font-black [text-shadow:0_2px_12px_rgba(0,0,0,0.4)]">
+                A curated showcase of architectural shading installations across India's most prestigious estates.
+              </p>
+            </motion.div>
+          </div>
         </div>
       </section>
 

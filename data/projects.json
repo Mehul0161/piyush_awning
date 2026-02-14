@@ -4,7 +4,7 @@
     "title": "Vedic Villa",
     "type": "Luxury Residence",
     "location": "Alibaug, Maharashtra",
-    "image": "/heroBG.jpeg",
+    "image": "/assets/images/projects/vedic-villa.jpeg",
     "description": "Integration of retractable Pergolas into a traditional courtyard, blending heritage with modern climate control."
   },
   {
@@ -12,7 +12,7 @@
     "title": "Skyline Terrace",
     "type": "Commercial",
     "location": "South Bombay",
-    "image": "/heroBG.jpeg",
+    "image": "/assets/images/projects/skyline-terrace.jpeg",
     "description": "A sophisticated rooftop lounge featuring custom-engineered tensile structures for year-round coastal dining."
   },
   {
@@ -20,7 +20,7 @@
     "title": "Zen Garden Retreat",
     "type": "Luxury Residence",
     "location": "Bangalore, Karnataka",
-    "image": "/heroBG.jpeg",
+    "image": "/assets/images/projects/zen-garden.jpeg",
     "description": "Minimalist glass-integrated awnings that disappear when not in use, preserving the garden's architectural lines."
   },
   {
@@ -28,7 +28,7 @@
     "title": "The Azure Estate",
     "type": "Hospitality",
     "location": "Goa",
-    "image": "/heroBG.jpeg",
+    "image": "/assets/images/projects/azure-estate.jpeg",
     "description": "Bespoke poolside gazebos designed to withstand extreme humidity while maintaining a boutique resort aesthetic."
   },
   {
@@ -36,7 +36,7 @@
     "title": "Tech Park Pavilion",
     "type": "Corporate",
     "location": "Hyderabad",
-    "image": "/heroBG.jpeg",
+    "image": "/assets/images/projects/tech-park.jpeg",
     "description": "Large-scale automated shading for outdoor workspaces, improving energy efficiency for the entire block."
   },
   {
@@ -44,7 +44,7 @@
     "title": "Mountain View Manor",
     "type": "Luxury Residence",
     "location": "Lonavala",
-    "image": "/heroBG.jpeg",
+    "image": "/assets/images/projects/mountain-view.jpeg",
     "description": "Heavy-duty bioclimatic pergolas with integrated rain sensors, perfect for the intense monsoon seasons."
   }
 ]
