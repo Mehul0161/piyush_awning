@@ -1,0 +1,78 @@
+# PIYUSH AWNING - IMAGE ASSET GUIDE & CHECKLIST
+This guide lists all the locations in the project where placeholder images are currently used and provides recommendations for the actual assets required.
+
+--------------------------------------------------------------------------------
+1. GLOBAL SYSTEM ASSETS
+--------------------------------------------------------------------------------
+File: /public/heroBG.jpeg (CURRENT UNIVERSAL PLACEHOLDER)
+Description: This is used as a default background across almost all sections.
+Recommendation: Replace with a high-resolution (2000px+) architectural shot of a luxury villa with a retractable awning or pergola.
+
+--------------------------------------------------------------------------------
+2. HERO & LANDING SECTIONS
+--------------------------------------------------------------------------------
+File: components/sections/HeroSection.tsx
+Used as: Main Background Image
+Ideal Asset: A stunning 'Hero' shot showing a high-end installation (e.g., a motorized pergola over a poolside lounge).
+
+File: components/sections/ParallaxStory.tsx
+Used as: Parallax Background
+Ideal Asset: A vertical or landscape shot of a fabric texture or a close-up of structural machinery (shadows on stone/wood).
+
+--------------------------------------------------------------------------------
+3. PRODUCTS (data/products.json)
+--------------------------------------------------------------------------------
+Each product currently uses /heroBG.jpeg. You should add unique images for:
+
+- Elite Series (Retractable Awning): High-end motorized awning on a modern facade.
+- Classic Gazebo: Freestanding gazebo in a lush garden or lawn setting.
+- Retractable Awning: Standard balcony/terrace installation.
+- Pergola Bio-Climatic: Hard-top aluminum louvred pergola.
+- Fixed Polycarbonate: Transparent/Clear fixed awning installation.
+
+--------------------------------------------------------------------------------
+4. PROJECTS PORTFOLIO (data/projects.json)
+--------------------------------------------------------------------------------
+These represent your real-world completions. Recommended image types:
+
+- Vedic Villa: Traditional Indian architecture with integrated modern shading.
+- Skyline Terrace: Rooftop commercial/restaurant setting with sea views.
+- Zen Garden Retreat: Minimalist, clean-line installation in a garden.
+- The Azure Estate: Hospitality/Resort poolside setting.
+- Tech Park Pavilion: Large-scale commercial office park installation.
+- Mountain View Manor: Heavy-duty structure in a rainy/mountainous location.
+
+--------------------------------------------------------------------------------
+5. GALLERY (data/gallery.json)
+--------------------------------------------------------------------------------
+The gallery needs 6+ varied shots focusing on:
+- Close-up fabric textures.
+- Structural joints and motor mechanisms.
+- Completed project wide-angles.
+- Night shots with LED lighting integrated into the products.
+
+--------------------------------------------------------------------------------
+6. ABOUT & TEAM (app/about/page.tsx)
+--------------------------------------------------------------------------------
+- About Hero: Heritage/History themed architectural shot.
+- Team Portraits: 4 professional headshots for:
+  * Piyush Patel
+  * Sanjay Mehta
+  * Elena Rossi
+  * Vikram Shah
+
+--------------------------------------------------------------------------------
+7. MANUFACTURING (app/manufacturing/page.tsx)
+--------------------------------------------------------------------------------
+Requires shots of:
+- Factory Floor / Precision Machinery.
+- Craftsmen working on fabric.
+- Quality Control / Testing.
+- Raw material (Aluminum/Fabric) storage.
+
+--------------------------------------------------------------------------------
+HOW TO ADD IMAGES:
+1. Move your image files into the /public/ folder.
+2. Rename them clearly (e.g., /public/product-pergola.jpg).
+3. Update the corresponding .json file or .tsx file to point to the new path.
+--------------------------------------------------------------------------------

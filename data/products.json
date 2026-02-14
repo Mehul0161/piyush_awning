@@ -1,0 +1,151 @@
+[
+  {
+    "slug": "elite-retractable",
+    "name": "Elite Series",
+    "category": "Elite Retractable Series",
+    "thumbnail": "/heroBG.jpeg",
+    "shortDescription": "Precision engineered for luxury outdoor living spaces.",
+    "modelPath": null,
+    "keySpecs": {
+      "maxWidth": "7.0 Meters",
+      "maxProjection": "4.0 Meters",
+      "windRating": "Class 3",
+      "warranty": "10 Years"
+    },
+    "specs": {
+      "Mounting Hardware": "Extruded Aluminum with Stainless Steel Bolts",
+      "Fabric Weight": "320g/m² Solution Dyed Acrylic",
+      "Standard Pitch": "Adjustable from 5° to 45°"
+    },
+    "features": [
+      "Certified UV Protection UPF 50+",
+      "Self-Cleaning Nanotech Coating",
+      "Integrated LED Lighting Optional"
+    ],
+    "fabricColors": [
+      "#1e3a5f",
+      "#8B4513",
+      "#ffffff",
+      "#1a1a1a",
+      "#e8e2db",
+      "#2c3e2c",
+      "#6b4423",
+      "#6b7280"
+    ],
+    "frameOptions": [
+      {
+        "name": "MATTE BLACK",
+        "color": "#1a1a1a"
+      },
+      {
+        "name": "URBAN GREY",
+        "color": "#4a4a4a"
+      },
+      {
+        "name": "POLAR WHITE",
+        "color": "#f5f5f5"
+      }
+    ],
+    "fabricCount": 42,
+    "relatedSlugs": [
+      "pergola-louvre",
+      "awning-fixed",
+      "gazebo-classic"
+    ],
+    "frameColors": [
+      "#1a1a1a",
+      "#4a4a4a",
+      "#f5f5f5"
+    ]
+  },
+  {
+    "slug": "gazebo-classic",
+    "name": "Classic Gazebo",
+    "category": "Gazebos",
+    "thumbnail": "/heroBG.jpeg",
+    "shortDescription": "Elegant freestanding gazebo for gardens and patios.",
+    "modelPath": null,
+    "specs": {
+      "dimensions": "3m x 3m (custom sizes available)",
+      "frame": "Powder-coated steel",
+      "roof": "Fabric or polycarbonate",
+      "warranty": "2 years"
+    },
+    "fabricColors": [
+      "#8B7355",
+      "#2c3e2c",
+      "#4a6b6b"
+    ],
+    "frameColors": [
+      "#ffffff",
+      "#2c3e2c",
+      "#6b7280"
+    ]
+  },
+  {
+    "slug": "awning-retractable",
+    "name": "Retractable Awning",
+    "category": "Awnings",
+    "thumbnail": "/heroBG.jpeg",
+    "shortDescription": "Motorized or manual retractable awning for balconies.",
+    "modelPath": null,
+    "specs": {
+      "dimensions": "2m–5m width",
+      "frame": "Aluminium",
+      "fabric": "Acrylic / polyester",
+      "warranty": "2 years"
+    },
+    "fabricColors": [
+      "#8B7355",
+      "#2c3e2c",
+      "#1e3a5f"
+    ],
+    "frameColors": [
+      "#ffffff",
+      "#2c3e2c"
+    ]
+  },
+  {
+    "slug": "pergola-louvre",
+    "name": "Pergola Bio-Climatic",
+    "category": "Pergolas",
+    "thumbnail": "/heroBG.jpeg",
+    "shortDescription": "Adjustable aluminum louvers for all-weather use.",
+    "modelPath": null,
+    "specs": {
+      "dimensions": "Custom",
+      "frame": "Aluminium",
+      "roof": "Aluminium louvres",
+      "warranty": "5 years"
+    },
+    "fabricColors": [],
+    "frameColors": [
+      "#ffffff",
+      "#2c3e2c",
+      "#6b7280"
+    ]
+  },
+  {
+    "slug": "awning-fixed",
+    "name": "Fixed Polycarbonate",
+    "category": "Awnings",
+    "thumbnail": "/heroBG.jpeg",
+    "shortDescription": "High impact resistance with crystal clear transparency.",
+    "modelPath": null,
+    "specs": {
+      "dimensions": "Custom",
+      "frame": "Steel / aluminium",
+      "fabric": "Acrylic",
+      "warranty": "2 years"
+    },
+    "fabricColors": [
+      "#8B7355",
+      "#2c3e2c",
+      "#1e3a5f"
+    ],
+    "frameColors": [
+      "#ffffff",
+      "#2c3e2c"
+    ]
+  }
+]

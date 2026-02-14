@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "src": "/heroBG.jpeg",
+    "tags": [
+      "Texture",
+      "Fabric"
+    ]
+  },
+  {
+    "id": "2",
+    "src": "/heroBG.jpeg",
+    "tags": [
+      "Gazebos",
+      "Completed"
+    ]
+  },
+  {
+    "id": "3",
+    "src": "/heroBG.jpeg",
+    "tags": [
+      "Texture",
+      "Materials"
+    ]
+  },
+  {
+    "id": "4",
+    "src": "/heroBG.jpeg",
+    "tags": [
+      "Awnings",
+      "Completed"
+    ]
+  },
+  {
+    "id": "5",
+    "src": "/heroBG.jpeg",
+    "tags": [
+      "Pergolas",
+      "Completed"
+    ]
+  },
+  {
+    "id": "6",
+    "src": "/heroBG.jpeg",
+    "tags": [
+      "Details",
+      "Fabric"
+    ]
+  }
+]

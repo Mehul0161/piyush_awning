@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "question": "What areas do you serve?",
+    "answer": "We serve clients across India. We offer site visits in major cities and can coordinate installation for projects elsewhere."
+  },
+  {
+    "id": "2",
+    "question": "How long does installation take?",
+    "answer": "Typically 1–3 days depending on the product and site. Custom fabrication may take 2–4 weeks from order confirmation."
+  },
+  {
+    "id": "3",
+    "question": "Do you provide warranty?",
+    "answer": "Yes. Our products come with a standard warranty (usually 2 years for awnings and gazebos, up to 5 years for aluminium pergolas). Terms are shared at the time of quote."
+  },
+  {
+    "id": "4",
+    "question": "Can I get a free site visit and quote?",
+    "answer": "Yes. Contact us via WhatsApp or the contact form to schedule a free site visit. We will measure, discuss options, and provide a detailed quote."
+  },
+  {
+    "id": "5",
+    "question": "Do you use your own factory?",
+    "answer": "Yes. We have in-house factory manufacturing with over 15 years of experience, ensuring quality control and customisation."
+  }
+]

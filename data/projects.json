@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "title": "Vedic Villa",
+    "type": "Luxury Residence",
+    "location": "Alibaug, Maharashtra",
+    "image": "/heroBG.jpeg",
+    "description": "Integration of retractable Pergolas into a traditional courtyard, blending heritage with modern climate control."
+  },
+  {
+    "id": "2",
+    "title": "Skyline Terrace",
+    "type": "Commercial",
+    "location": "South Bombay",
+    "image": "/heroBG.jpeg",
+    "description": "A sophisticated rooftop lounge featuring custom-engineered tensile structures for year-round coastal dining."
+  },
+  {
+    "id": "3",
+    "title": "Zen Garden Retreat",
+    "type": "Luxury Residence",
+    "location": "Bangalore, Karnataka",
+    "image": "/heroBG.jpeg",
+    "description": "Minimalist glass-integrated awnings that disappear when not in use, preserving the garden's architectural lines."
+  },
+  {
+    "id": "4",
+    "title": "The Azure Estate",
+    "type": "Hospitality",
+    "location": "Goa",
+    "image": "/heroBG.jpeg",
+    "description": "Bespoke poolside gazebos designed to withstand extreme humidity while maintaining a boutique resort aesthetic."
+  },
+  {
+    "id": "5",
+    "title": "Tech Park Pavilion",
+    "type": "Corporate",
+    "location": "Hyderabad",
+    "image": "/heroBG.jpeg",
+    "description": "Large-scale automated shading for outdoor workspaces, improving energy efficiency for the entire block."
+  },
+  {
+    "id": "6",
+    "title": "Mountain View Manor",
+    "type": "Luxury Residence",
+    "location": "Lonavala",
+    "image": "/heroBG.jpeg",
+    "description": "Heavy-duty bioclimatic pergolas with integrated rain sensors, perfect for the intense monsoon seasons."
+  }
+]
