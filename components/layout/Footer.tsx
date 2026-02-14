@@ -56,7 +56,7 @@ export function Footer() {
           </div>
 
           {/* Links Grid */}
-          <div className="lg:col-span-5 grid grid-cols-2 gap-12">
+          <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-12">
             <div>
               <h4 className="text-[10px] font-black uppercase tracking-[0.4em] text-gold mb-10">Collections</h4>
               <ul className="space-y-4 text-[13px] font-bold text-white/60">

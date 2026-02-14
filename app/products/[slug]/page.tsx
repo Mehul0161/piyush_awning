@@ -143,7 +143,7 @@ export default function ProductDetailPage() {
           <div className="space-y-12">
             <div className="space-y-6">
               <span className="text-xs font-bold uppercase tracking-[0.4em] text-accent">Precision Engineering</span>
-              <h1 className="font-serif text-5xl md:text-7xl font-bold text-charcoal tracking-tight leading-[1.05]">
+              <h1 className="font-serif text-3xl sm:text-5xl md:text-7xl font-bold text-charcoal tracking-tight leading-[1.05]">
                 {product.name}
               </h1>
               <p className="text-lg text-sage-600 leading-relaxed font-medium">
@@ -164,7 +164,7 @@ export default function ProductDetailPage() {
               </div>
             </div>
 
-            <div className="rounded-[2.5rem] bg-stone-50 p-10 border border-stone-100 shadow-xl shadow-stone-200/50">
+            <div className="rounded-[2.5rem] bg-stone-50 p-6 sm:p-10 border border-stone-100 shadow-xl shadow-stone-200/50">
               <div className="mb-8">
                 <h3 className="text-[10px] font-black text-accent uppercase tracking-[0.4em] mb-2">Build Your Own</h3>
                 <h2 className="text-2xl font-bold text-charcoal">Quick Quote Request</h2>
@@ -237,7 +237,7 @@ export default function ProductDetailPage() {
             <div className="flex items-center justify-between mb-12">
               <div>
                 <h4 className="text-[10px] font-black text-accent uppercase tracking-[0.4em] mb-2">Explore Options</h4>
-                <h2 className="font-serif text-5xl font-bold text-charcoal">Related Designs</h2>
+                <h2 className="font-serif text-3xl sm:text-5xl font-bold text-charcoal">Related Designs</h2>
               </div>
               <div className="flex gap-4">
                 <button className="h-12 w-12 rounded-full border border-stone-200 flex items-center justify-center hover:bg-accent hover:text-white transition-all">←</button>

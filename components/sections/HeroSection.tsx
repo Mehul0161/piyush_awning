@@ -30,7 +30,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           >
-            <h1 className="font-serif text-6xl md:text-8xl font-bold tracking-tight text-white leading-[1.05] [text-shadow:0_4px_24px_rgba(0,0,0,0.5)]">
+            <h1 className="font-serif text-4xl sm:text-6xl md:text-8xl font-bold tracking-tight text-white leading-[1.05] [text-shadow:0_4px_24px_rgba(0,0,0,0.5)]">
               Elevating <br />
               <span className="text-accent italic">Outdoor Living.</span>
             </h1>
@@ -39,7 +39,7 @@ export function HeroSection() {
               Bespoke shading solutions that merge architectural precision with the serenity of nature. Hand-crafted for India's finest estates.
             </p>
 
-            <div className="mt-12 flex flex-wrap gap-6">
+            <div className="mt-12 flex flex-wrap justify-center lg:justify-start gap-6">
               <Button href="/products" variant="primary">Explore Collections</Button>
               <Button href="/projects" variant="outline" className="text-white border-white/20 hover:bg-white/10 [text-shadow:none]">View Portfolio</Button>
             </div>
@@ -51,19 +51,19 @@ export function HeroSection() {
                   Mastering Sunlight since 2011
                 </span>
               </div>
-              <div className="flex items-center gap-12">
+              <div className="flex flex-wrap items-center gap-x-12 gap-y-8">
                 <div className="flex flex-col">
-                  <span className="text-3xl font-bold text-white tracking-tighter">15</span>
+                  <span className="text-2xl sm:text-3xl font-bold text-white tracking-tighter">15</span>
                   <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white/40">Years Exp.</span>
                 </div>
-                <div className="h-10 w-[1px] bg-white/10" />
+                <div className="h-10 w-[1px] bg-white/10 hidden sm:block" />
                 <div className="flex flex-col">
-                  <span className="text-3xl font-bold text-white tracking-tighter">5000+</span>
+                  <span className="text-2xl sm:text-3xl font-bold text-white tracking-tighter">5000+</span>
                   <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white/40">Installations</span>
                 </div>
-                <div className="h-10 w-[1px] bg-white/10" />
+                <div className="h-10 w-[1px] bg-white/10 hidden sm:block" />
                 <div className="flex flex-col">
-                  <span className="text-3xl font-bold text-white tracking-tighter">Pan-India</span>
+                  <span className="text-2xl sm:text-3xl font-bold text-white tracking-tighter">Pan-India</span>
                   <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white/40">Service</span>
                 </div>
               </div>

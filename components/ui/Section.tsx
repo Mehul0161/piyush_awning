@@ -21,7 +21,7 @@ export function Section({
             {title && (
               <div className="flex flex-col items-start">
                 <div className="section-heading-bar" />
-                <h2 className="font-serif text-5xl md:text-7xl font-bold tracking-tight text-charcoal max-w-4xl text-balance leading-[1.1]">
+                <h2 className="font-serif text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight text-charcoal max-w-4xl text-balance leading-[1.1]">
                   {title}
                 </h2>
               </div>

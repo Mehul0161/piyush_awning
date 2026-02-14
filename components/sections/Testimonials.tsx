@@ -29,7 +29,7 @@ export function Testimonials() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: idx * 0.2 }}
-                        className="flex flex-col rounded-[2.5rem] bg-white p-12 shadow-sm border border-stone-100 hover:shadow-xl transition-shadow duration-500 group relative"
+                        className="flex flex-col rounded-[2.5rem] bg-white p-8 sm:p-12 shadow-sm border border-stone-100 hover:shadow-xl transition-shadow duration-500 group relative"
                     >
                         <div className="absolute top-10 right-10 text-stone-100 scale-150 group-hover:text-accent/10 transition-colors">
                             <svg className="h-16 w-16" fill="currentColor" viewBox="0 0 24 24">

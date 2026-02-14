@@ -29,7 +29,7 @@ export default function AboutPage() {
         <div className="relative z-20 flex min-h-screen flex-col items-center justify-center px-4 pt-20">
           <div className="mx-auto max-w-7xl w-full text-center">
             <span className="text-xs font-bold uppercase tracking-[0.4em] text-accent mb-4 block">The Heritage</span>
-            <h1 className="font-serif text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight [text-shadow:0_4px_24px_rgba(0,0,0,0.6)]">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight [text-shadow:0_4px_24px_rgba(0,0,0,0.6)]">
               A Journey of <br />
               <span className="text-accent italic">Evolution.</span>
             </h1>
@@ -93,8 +93,8 @@ export default function AboutPage() {
                       </p>
                     </div>
 
-                    {/* Huge Background Year */}
-                    <span className={`absolute -top-16 md:-top-32 font-serif font-black text-[12rem] md:text-[18rem] text-stone-100/40 -z-10 select-none pointer-events-none transition-transform duration-1000 group-hover:scale-110 ${i % 2 === 0 ? '-right-12' : '-left-12'}`}>
+                    {/* Huge Background Year - scaled for mobile */}
+                    <span className={`absolute -top-12 sm:-top-24 md:-top-32 font-serif font-black text-[6rem] sm:text-[12rem] md:text-[18rem] text-stone-100/40 -z-10 select-none pointer-events-none transition-transform duration-1000 group-hover:scale-110 ${i % 2 === 0 ? '-right-4 sm:-right-12' : '-left-4 sm:-left-12'}`}>
                       {item.year}
                     </span>
                   </div>
@@ -125,12 +125,12 @@ export default function AboutPage() {
       {/* Team Section */}
       <section className="bg-[#0A0F0B] py-32 text-white overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row items-end justify-between mb-20 gap-8">
-            <div className="max-w-xl">
+          <div className="flex flex-col lg:flex-row items-center lg:items-end justify-between mb-20 gap-8">
+            <div className="max-w-xl text-center lg:text-left">
               <span className="text-xs font-bold uppercase tracking-[0.4em] text-accent mb-4 block">Our Team</span>
-              <h2 className="font-serif text-5xl font-bold">The Minds Behind <br />The Mastery.</h2>
+              <h2 className="font-serif text-4xl sm:text-5xl font-bold">The Minds Behind <br />The Mastery.</h2>
             </div>
-            <p className="text-white/40 max-w-sm text-sm font-bold uppercase tracking-[0.2em] leading-relaxed">
+            <p className="text-white/40 max-w-sm text-sm font-bold uppercase tracking-[0.2em] leading-relaxed text-center lg:text-left">
               Meet the architects and master craftsmen who bring your outdoor visions to life with obsessive detail.
             </p>
           </div>
@@ -152,8 +152,8 @@ export default function AboutPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F0B] via-transparent to-transparent opacity-60" />
                 </div>
-                <h4 className="text-xl font-bold mb-2 tracking-tight">{member.name}</h4>
-                <p className="text-[10px] font-black uppercase tracking-[0.2em] text-accent">{member.role}</p>
+                <h4 className="text-xl font-bold mb-2 tracking-tight text-center sm:text-left">{member.name}</h4>
+                <p className="text-[10px] font-black uppercase tracking-[0.2em] text-accent text-center sm:text-left">{member.role}</p>
               </div>
             ))}
           </div>

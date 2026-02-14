@@ -16,10 +16,10 @@ export function ParallaxStory() {
   return (
     <section
       ref={ref}
-      className="relative py-40 overflow-hidden bg-white"
+      className="relative py-20 md:py-40 overflow-hidden bg-white"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-24 md:grid-cols-2">
+        <div className="grid items-center gap-12 md:gap-24 md:grid-cols-2">
           {/* Image Side */}
           <motion.div style={{ y }} className="relative aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl group order-2 md:order-1">
             <Image
@@ -39,7 +39,7 @@ export function ParallaxStory() {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="flex flex-col justify-center order-1 md:order-2"
+            className="flex flex-col justify-center text-center md:text-left items-center md:items-start order-1 md:order-2"
           >
             <span className="text-xs font-bold uppercase tracking-[0.4em] text-accent mb-6 block">
               The Piyush Legacy

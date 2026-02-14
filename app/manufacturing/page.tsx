@@ -94,7 +94,7 @@ export default function ManufacturingPage() {
 
         <div className="relative z-20 text-center px-4 max-w-4xl pt-20">
           <span className="text-xs font-bold uppercase tracking-[0.4em] text-accent mb-4 block">Inside The Foundry</span>
-          <h1 className="font-serif text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight">
             Crafting Shade, <br />
             Engineering <span className="text-accent italic">Solitude.</span>
           </h1>
@@ -118,17 +118,17 @@ export default function ManufacturingPage() {
               viewport={{ once: true }}
               className={`flex flex-col md:flex-row items-center gap-16 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
             >
-              <div className="flex-1 space-y-6">
-                <div className="flex items-center gap-4">
+              <div className="flex-1 space-y-6 text-center md:text-left flex flex-col items-center md:items-start">
+                <div className="flex flex-col md:flex-row items-center gap-4">
                   <span className="flex h-10 w-10 items-center justify-center rounded-full bg-accent text-white font-bold shadow-lg shadow-accent/20">
                     {step.step}
                   </span>
-                  <h3 className="text-3xl font-bold text-charcoal">{step.title}</h3>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-charcoal">{step.title}</h3>
                 </div>
                 <p className="text-lg text-sage-600 leading-relaxed max-w-lg">
                   {step.description}
                 </p>
-                <div className="flex gap-8 pt-4">
+                <div className="flex justify-center md:justify-start gap-8 pt-4">
                   <div className="space-y-1">
                     <div className="h-1 w-8 bg-accent" />
                     <span className="text-[10px] font-bold uppercase tracking-widest text-sage-400">Spec Check</span>

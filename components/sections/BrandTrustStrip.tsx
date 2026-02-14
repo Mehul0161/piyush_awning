@@ -11,9 +11,9 @@ const stats = [
 
 export function BrandTrustStrip() {
   return (
-    <div className="bg-[#0A0F0B] py-16">
+    <div className="bg-[#0A0F0B] py-12 md:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-y-12 lg:grid-cols-4 lg:divide-x lg:divide-white/10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-12 lg:grid-cols-4 lg:divide-x lg:divide-white/10">
           {stats.map((stat, idx) => (
             <motion.div
               key={idx}
@@ -21,7 +21,7 @@ export function BrandTrustStrip() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="text-center px-8 group"
+              className="text-center px-4 sm:px-8 group"
             >
               <div className="flex flex-col items-center">
                 <span className="text-4xl md:text-5xl font-bold text-white tracking-tighter transition-transform duration-500 group-hover:scale-110">

@@ -46,7 +46,7 @@ export default function FAQPage() {
 
         <div className="relative z-20 text-center px-4 max-w-4xl pt-20">
           <span className="text-xs font-bold uppercase tracking-[0.4em] text-accent mb-4 block">Concierge & Knowledge</span>
-          <h1 className="font-serif text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight [text-shadow:0_4px_24px_rgba(0,0,0,0.6)]">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight [text-shadow:0_4px_24px_rgba(0,0,0,0.6)]">
             Clarity in <br />
             <span className="text-accent italic">Detail.</span>
           </h1>

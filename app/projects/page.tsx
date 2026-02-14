@@ -55,7 +55,7 @@ export default function ProjectsPage() {
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             >
               <span className="text-xs font-bold uppercase tracking-[0.4em] text-accent mb-4 block">The Portfolio</span>
-              <h1 className="font-serif text-6xl md:text-8xl font-bold text-white tracking-tight leading-tight [text-shadow:0_4px_24px_rgba(0,0,0,0.6)]">
+              <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight [text-shadow:0_4px_24px_rgba(0,0,0,0.6)]">
                 Our <span className="text-accent italic">Masterpieces.</span>
               </h1>
               <p className="mt-8 text-lg text-white max-w-2xl mx-auto leading-relaxed uppercase tracking-[0.1em] text-[10px] font-black [text-shadow:0_2px_12px_rgba(0,0,0,0.4)]">

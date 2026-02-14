@@ -56,7 +56,7 @@ export default function ServicesPage() {
 
         <div className="relative z-20 text-center px-4 max-w-4xl pt-20">
           <span className="text-xs font-bold uppercase tracking-[0.4em] text-accent mb-4 block">End-To-End Mastery</span>
-          <h1 className="font-serif text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight">
             Our <br />
             <span className="text-accent italic">Solitude Services.</span>
           </h1>

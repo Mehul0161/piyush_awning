@@ -82,7 +82,7 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="font-serif text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight [text-shadow:0_4px_24px_rgba(0,0,0,0.6)]"
+            className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight [text-shadow:0_4px_24px_rgba(0,0,0,0.6)]"
           >
             Start Your <br />
             <span className="text-accent italic">Solitude Project.</span>
@@ -98,8 +98,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <Section className="pb-32 pt-32">
-        <div className="grid gap-20 lg:grid-cols-12">
+      <Section className="py-20 lg:py-32">
+        <div className="grid gap-12 lg:gap-20 lg:grid-cols-12">
           {/* Form Side */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -115,7 +115,7 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-8 rounded-[3.5rem] bg-stone-50 p-10 lg:p-14 border border-stone-100 shadow-2xl shadow-stone-200/50 relative overflow-hidden group">
+            <form onSubmit={handleSubmit} className="space-y-8 rounded-[3rem] bg-stone-50 p-6 sm:p-10 lg:p-14 border border-stone-100 shadow-2xl shadow-stone-200/50 relative overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
 
               <div className="relative z-10 space-y-10">
@@ -236,8 +236,8 @@ export default function ContactPage() {
             className="lg:col-span-5 space-y-12"
           >
             {/* Map Preview - Architectural Presentation */}
-            <div className="rounded-[4rem] bg-[#0A0F0B] p-2 border border-white/5 shadow-2xl overflow-hidden group relative">
-              <div className="aspect-[4/5] rounded-[3.8rem] overflow-hidden relative border border-white/10">
+            <div className="rounded-[3rem] sm:rounded-[4rem] bg-[#0A0F0B] p-2 border border-white/5 shadow-2xl overflow-hidden group relative">
+              <div className="aspect-square sm:aspect-[4/5] rounded-[2.8rem] sm:rounded-[3.8rem] overflow-hidden relative border border-white/10">
                 <iframe
                   src={MAP_EMBED_URL}
                   width="100%"
@@ -252,12 +252,12 @@ export default function ContactPage() {
                 <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#0A0F0B] via-transparent to-[#0A0F0B]/40" />
 
                 {/* Decorative Grid/Coordinates */}
-                <div className="absolute top-12 left-12 flex flex-col gap-1">
+                <div className="absolute top-6 left-6 sm:top-12 sm:left-12 flex flex-col gap-1">
                   <span className="text-[10px] font-black uppercase tracking-[0.4em] text-accent/80">Location Hub</span>
                   <span className="text-[8px] font-bold text-white/30 tracking-[0.2em]">28.6859° N, 76.9923° E</span>
                 </div>
 
-                <div className="absolute bottom-12 left-1/2 -translate-x-1/2 w-[calc(100%-6rem)]">
+                <div className="absolute bottom-6 sm:bottom-12 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] sm:w-[calc(100%-6rem)]">
                   <div className="bg-white/10 backdrop-blur-xl p-6 rounded-3xl border border-white/10 flex items-center justify-between group-hover:bg-white/15 transition-all duration-500">
                     <div className="flex items-center gap-4">
                       <div className="h-10 w-10 rounded-2xl bg-accent flex items-center justify-center shadow-lg shadow-accent/20">
@@ -302,7 +302,7 @@ export default function ContactPage() {
                 <motion.div
                   key={i}
                   whileHover={{ y: -8 }}
-                  className="flex gap-8 p-10 rounded-[3rem] bg-white border border-stone-100 shadow-xl shadow-stone-200/40 hover:shadow-2xl hover:border-accent/20 transition-all duration-500"
+                  className="flex flex-col sm:flex-row gap-6 sm:gap-8 p-6 sm:p-10 rounded-[2.5rem] sm:rounded-[3rem] bg-white border border-stone-100 shadow-xl shadow-stone-200/40 hover:shadow-2xl hover:border-accent/20 transition-all duration-500 items-center sm:items-start text-center sm:text-left"
                 >
                   <div className="h-16 w-16 shrink-0 rounded-[1.5rem] bg-stone-50 flex items-center justify-center text-accent shadow-inner">
                     <svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">

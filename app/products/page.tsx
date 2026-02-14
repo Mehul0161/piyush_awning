@@ -50,7 +50,7 @@ export default function ProductsPage() {
 
         <div className="relative z-20 text-center px-4 max-w-4xl pt-20">
           <span className="text-xs font-bold uppercase tracking-[0.4em] text-accent mb-4 block">The Collections</span>
-          <h1 className="font-serif text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight [text-shadow:0_4px_24px_rgba(0,0,0,0.6)]">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight [text-shadow:0_4px_24px_rgba(0,0,0,0.6)]">
             Architectural <span className="text-accent italic">Elegance.</span>
           </h1>
           <p className="mt-8 text-lg text-white max-w-2xl mx-auto leading-relaxed uppercase tracking-[0.1em] text-[10px] font-black [text-shadow:0_2px_12px_rgba(0,0,0,0.4)]">
@@ -124,12 +124,12 @@ export default function ProductsPage() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-32 rounded-[3.5rem] bg-stone-950 p-12 md:p-24 text-center relative overflow-hidden group"
+          className="mt-32 rounded-[3.5rem] bg-stone-950 p-6 sm:p-12 md:p-24 text-center relative overflow-hidden group"
         >
           <div className="absolute inset-0 opacity-20 grayscale scale-110 group-hover:scale-100 transition-transform duration-1000">
             <Image fill src="/assets/images/hero/cta-background.jpeg" alt="CTA BG" className="object-cover" />
           </div>
-          <div className="relative z-10 border border-white/5 p-12 md:p-20 rounded-[3rem] backdrop-blur-sm bg-white/5">
+          <div className="relative z-10 border border-white/5 p-8 md:p-20 rounded-[3rem] backdrop-blur-sm bg-white/5">
             <span className="text-[10px] font-black uppercase tracking-[0.5em] text-accent mb-6 block">Ready for your sanctuary?</span>
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-8">Let's Architect Your <br /><span className="text-accent italic">Solitude Project.</span></h2>
             <Link
